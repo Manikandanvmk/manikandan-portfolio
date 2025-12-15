@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manikandan Vetrivel | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4f46e5;   /* Indigo */
+      --secondary: #06b6d4; /* Cyan */
+      --accent: #22c55e;   /* Green */
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #eef2ff, #ecfeff);
+      color: var(--dark);
+    }
+
+    /* HEADER */
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header h1 span {
+      color: #bbf7d0;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 0.75rem 2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      color: var(--primary);
+    }
+
+    /* MODULE CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .module {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      transition: 0.35s ease;
+    }
+
+    .module:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+    }
+
+    .module h3 {
+      margin-bottom: 0.75rem;
+      color: var(--secondary);
+    }
+
+    .module p, .module li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* SKILLS TAGS */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    .tag {
+      background: linear-gradient(135deg, var(--secondary), var(--accent));
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      border-left: 4px solid var(--primary);
+      padding-left: 2rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item h4 {
+      color: var(--primary);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #cbd5f5;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: #67e8f9;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Hi, I'm <span>Manikandan</span></h1>
+      <p>Software Engineer | Full Stack Web Developer | Azure Backend</p>
+      <p>Chennai, India</p>
+      <a href="#projects" class="cta">View My Work</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <div class="grid">
+      <div class="module">
+        <h3>Professional Summary</h3>
+        <p>
+        Web Application Developer with 2.5+ years of experience delivering scalable, commercially successful solutions. Proven expertise in diagnosing and resolving critical SQL and backend performance issues through rapid analysis and root-cause identification. Strong focus on code quality, best practices, and system scalability to build high-performing applications. A collaborative team player who consistently contributes to successful project delivery, even under
+ tight timelines.
+        </p>
+      </div>
+      <div class="module">
+        <h3>What I Focus On</h3>
+        <ul>
+          <li>✔ Clean & maintainable code</li>
+          <li>✔ Backend performance optimization</li>
+          <li>✔ Azure cloud-native solutions</li>
+          <li>✔ Scalable application design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="tags">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">.NET</span>
+      <span class="tag">Java</span>
+      <span class="tag">PHP</span>
+      <span class="tag">MVC</span>
+      <span class="tag">LINQ</span>
+      <span class="tag">Kendo UI</span>
+      <span class="tag">Azure Functions</span>
+      <span class="tag">Blob Storage</span>
+      <span class="tag">SQL Server</span>
+      <span class="tag">MySQL</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Software Engineer – Softura</h4>
+        <p><em>July 2023 – Present | Chennai</em></p>
+        <p>
+          	Developed scalable and maintainable code, ensuring long-term stability of the software.
+	Integrated new technologies into existing systems, increasing capabilities and improving overall performance.
+	Implemented effective debugging strategies, resulting in fewer software defects and increased reliability.
+	Analysed proposed technical solutions based on customer requirements.
+	Proved successful working within tight deadlines and a fast-paced environment.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      <div class="module">
+        <h3>Komatsu University</h3>
+        <p><strong>Ongoing Project</strong></p>
+        <p>
+          Actively collaborating with a cross-functional team on the development of the Komatsu University web application, hosted on Microsoft Azure.
+        Contributing to backend development using Azure Functions to handle large-scale and long-running background jobs.
+        Working closely with stakeholders to identify requirements, address risks, and ensure smooth project execution toward on-time delivery.
+
+        </p>
+      </div>
+      <div class="module">
+        <h3>Banking Management System</h3>
+        <p><strong>College Project (2 Months)</strong></p>
+        <p>
+          Academic project implementing core banking operations,
+          account management, and security validations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="module">
+      <h3>B.Sc. Information Technology</h3>
+      <p>VHN Senthikumara Nadar College, Virudhunagar (2023)</p>
+      <p>12th & 10th – KVS Higher Secondary School, Virudhunagar</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📧 manikandanvetrivel.it@gmail.com | 📍 Chennai</p>
+    <p>
+      <a href="https://www.linkedin.com/in/manikandan-vetrivel-8ba893258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a> | <a href="https://manikandanvportfolio.netlify.app/">Portfolio</a>
+    </p>
+    <p>© 2025 Manikandan Vetrivel</p>
+  </footer>
+
+</body>
+</html>
